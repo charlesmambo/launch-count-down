@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Red Hat Text", sans-serif;
+    text-transform: uppercase;
+}
+
+body, 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(234, 17%, 12%);
+}
+
+.container {
+    background-image: url('../images/bg-stars.svg');
+    width: 100%;
+    color: #ffff;
+}
+
+.dt-container {
+    gap: 1rem;
+}
+
+.dt-container,
+.dt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dt{
+    flex-direction: column;
+}
+
+h1 {
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: hsl(345, 95%, 68%);
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+}
+p {
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-top: 0.7rem;
+    letter-spacing: 2px;
+    color: hsl(237, 18%, 59%);
+}
+
+.d {
+    width: 100px;
+    text-align: center;
+    background-color: hsl(236, 21%, 26%);
+    border-radius: 0.2rem;
+    box-shadow: rgba(15, 15, 225, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.bg {
+    height: 30vh;
+    background-image: url('../images/pattern-hills.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-color: hsl(234, 17%, 12%);
+}
+.bg,
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul {
+    gap: 1rem;
+    color: hsl(236, 21%, 38%);
+}
+
+ul li i{
+    font-size: 1.3rem;
+}
+ul li i:hover{
+    cursor: pointer;
+    color: hsl(345, 95%, 68%);
+}
+
+footer {
+    background-color: hsl(234, 17%, 12%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attribution,
+.attribution a{
+    text-transform: capitalize; 
+    font-size: 0.8rem;
+    color: hsl(236, 21%, 38%);
+}
+
+span{
+    color: hsl(345, 95%, 68%);  
+    text-transform: capitalize; 
+}
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .container {
+        padding: 0.6rem 1rem;
+    }
+
+    .d {
+        width: 80px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .bg {
+        height: 10vh;
+
+    }
+    footer {
+       padding: 0.7rem;
+    }
+  }
